@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ted Piotrowski - Online Portfolio</title>
+    <script src="js/jquery.js"></script>
+    <script src="js/jsrender.js"></script>
+    <script src="js/main.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <meta charset="UTF-8" />
+    <!--[if lt IE 9]>
+    <script>
+    document.createElement('header');
+    document.createElement('nav');
+    document.createElement('section');
+    document.createElement('article');
+    document.createElement('aside');
+    document.createElement('footer');
+    document.createElement('hgroup');
+    </script>
+  <![endif]-->
+  </head>
+  
+  <body>
+    <header id="header">
+      <a href="resume.pdf" id="resume">resume</a>
+      <a href="" id="contact">contact</a>
+      <h1 id="my-name">Ted Piotrowski</h1>
+      <h2 id="my-passion">Front End Web Developer</h2>
+    </header>
+    
+    <div id="container">
+    <script id="portfolio_template" type="text/x-jsrender">
+      {{if description}}
+      <a class="work-sample-link" href="{{>description.links[0].link}}">
+      <article class="work-sample-container">
+        <h1 class="work-sample-name">{{>name}}</h1>
+        <h2 class="work-sample-tech">{{>description.tech}}</h2>
+        <div class="work-sample-image" style="background-image:url(images/{{>image}});"></div>
+      </article>
+      <article class="work-sample-info">
+        <p class="work-sample-role">
+          <strong>Role:</strong> {{>description.role}}
+        </p>
+        <p class="work-sample-description">
+          <strong>About:</strong> {{>description.description}}
+        </p>
+      </article>
+      </a>
+      {{else}}
+      <aside class="placeholder"></aside>
+      {{/if}}
+    </script>
+    </div>
+    
+    <footer>
+      Last updated: October 2012
+    </footer>
+    <script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-35854063-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+  </body>
+
+</html>

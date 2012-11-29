@@ -1,0 +1,192 @@
+/****** Full Document ******/
+header,nav,section,article,aside,footer,hgroup 
+{ 
+display: block;
+}
+
+html {
+  padding:0;
+  margin:0;
+  min-height:100%;
+}
+
+body {
+  font-family: helvetica, arial, sans-serif;
+  background-image: linear-gradient(top, #FBFBFB 0%, #DCDCDC 100%);
+  background-image: -o-linear-gradient(top, #FBFBFB 0%, #DCDCDC 100%);
+  background-image: -moz-linear-gradient(top, #FBFBFB 0%, #DCDCDC 100%);
+  background-image: -webkit-linear-gradient(top, #FBFBFB 0%, #DCDCDC 100%);
+  background-image: -ms-linear-gradient(top, #FBFBFB 0%, #DCDCDC 100%);
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(0, #FBFBFB),
+    color-stop(1, #CDCDCD)
+  );
+  filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#FBFBFB', endColorstr='#DCDCDC'); /* IE6,IE7 */
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#FBFBFB', endColorstr='#DCDCDC')"; /* IE8+ */
+  color:#333;
+  margin:0;
+  padding:0;
+}
+
+#header {
+  position:relative;
+  display:block;
+  width:960px;
+  margin:0 auto;
+}
+
+#resume {
+  position:absolute;
+  top:35px;
+  right:0;
+  font-size:12px;
+  text-decoration:none;
+  color:blue;
+}
+#resume:hover {
+  text-decoration:underline;
+}
+#resume:visited {
+  color:blue;
+}
+
+#contact {
+  position:absolute;
+  top:35px;
+  left:0;
+  font-size:12px;
+  text-decoration:none;
+  color:blue;
+}
+#contact:hover {
+  text-decoration:underline;
+}
+#contact:visited {
+  color:blue;
+}
+#container {
+  height:100%;
+  width:976px;
+  margin:0 auto 0 auto;
+}
+
+#my-name {
+  text-transform:uppercase;
+  text-align:center;
+  font-size:48px;
+  margin:24px 0 8px 0;
+  border-bottom:1px solid #aaa;
+  text-shadow:0 1px white;
+}
+#my-passion {
+  text-align:center;
+  font-size:24px;
+  text-transform:uppercase;
+  margin:8px 0 24px;
+  text-shadow:0 1px white;
+}
+
+
+/****** Header, Footer ******/
+#bio {
+  width:850px;
+  margin:0 auto;
+  padding:16px 0 16px 108px;
+  background: transparent url(../images/ted-piotrowski.jpg) no-repeat left center;
+  line-height:21px;
+  font-size:14px;
+}
+
+footer {
+  clear:both;
+  padding:12px 0;
+  font-size:10px;
+  text-align:center;
+}
+
+/****** Work Sample Widget ******/
+a.work-sample-link, .placeholder {
+  position:relative;
+  display:block;
+  width:210px;
+  height:266px;
+  float:left;
+  margin:8px;
+  padding:8px;
+  border-radius:2px;
+  background-color:#fff;
+  text-decoration:none;
+  overflow:hidden;
+  border:1px solid #ccc;
+  box-shadow:0 0 10px #ccc;
+}
+
+.placeholder {
+  visibility:hidden;
+}
+
+a.work-sample-link:hover .work-sample-container {
+  display:none;
+}
+
+a.work-sample-link:hover .work-sample-info {
+  display:block;
+}
+
+.work-sample-info {
+  display:none;
+}
+
+.work-sample-info .work-sample-description {
+  font-size:11px;
+  line-height:17px;
+  margin:0;
+  color:#777;
+}
+
+.work-sample-info .work-sample-role {
+  font-size:11px;
+  line-height:17px;
+  margin:0;
+  margin-bottom:8px;
+  color:#777;
+}
+
+.work-sample-image {
+  width:208px;
+  height:180px;
+  background: transparent url() no-repeat center center;
+  margin:24px 0 16px;
+}
+
+.work-sample-container h1, .work-sample-container h2, .work-sample-container p {
+  font-size:12px;
+  height:12px;
+  overflow:hidden;
+  color:#777;
+  font-weight:normal;
+  padding:0;
+  margin:0;
+}
+
+
+.work-sample-container .work-sample-name {
+  color:#777;
+  font-weight:bold;
+  font-size:12px;
+  line-height:16px;
+  padding-top:8px;
+  height:18px;
+  text-align:center;
+}
+
+.work-sample-container .work-sample-tech {
+  height:28px;
+  font-size:11px;
+  line-height:14px;
+  margin-top:6px;
+  text-align:center;
+}
